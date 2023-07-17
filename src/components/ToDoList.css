@@ -1,0 +1,144 @@
+:root {
+
+ 
+    --primary: #118c4f;
+    
+    --background: #f5f8ff;
+}
+
+
+
+
+.container {
+    background-color: #fff;
+    width: 600px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container h1 span {
+    color: var(--primary);
+}
+
+.container input {
+    padding: .8rem;
+    margin: 1rem;
+    width: 70%;
+    border: none;
+    background-color: #eee;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1rem;
+    outline: none;
+}
+
+.container .add {
+    padding: .8rem;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.container .add:hover {
+    box-shadow: 0px 0px 12px #333;
+    transform: scale(.3s);
+    transition: .3s ease-in;
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+ul .task {
+    display: block;
+    background-color: #eee;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
+ul li {
+    margin-top: 2rem;
+    list-style-type: square;
+    color: #333;
+}
+
+ul li .mark {
+    margin-top: .8rem;
+    padding: .5rem 1rem .5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+ul li .remove {
+    margin-top: .8rem;
+    padding: .5rem 1rem .5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--background);
+    margin-left: 1rem;
+}
+
+ul li  .mark:hover {
+    box-shadow: 0px 0px 12px #333;
+    transform: scale(.3s);
+    transition: .3s ease-in;
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+ul li  .remove:hover {
+    box-shadow: 0px 0px 12px #333;
+    transform: scale(.3s);
+    transition: .3s ease-in;
+    background-color: var(--background);
+    color: var(--primary);
+}
+
+.para {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+
+@media screen and (max-width: 624px) {
+    .container {
+        width: 100%;
+    }
+
+    .container input {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 374px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .para {
+        font-size: .8rem;
+    }
+
+    .mark .add {
+        display: block;
+        margin: auto;
+    }
+}
